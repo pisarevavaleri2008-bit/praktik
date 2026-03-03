@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Лабораторная работа 2</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            padding: 20px;
+            margin: 0;
+            min-width: 1200px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .block {
+            background-color: hsl(301, 68%, 82%);
+            border: 2px solid #720491;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: #252b2c;
+            border-radius: 5px;
+        }
+
+        .task-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px dashed #ccc;
+            background-color: #fafafa;
+            min-width: 1160px;
+        }
+
+        .task-title {
+            background-color: #f3c2dc;
+            color: white;
+            padding: 8px 15px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .full-width-container {
+            width: 100%;
+            background-color: #d5e8d4;
+            border: 2px solid #d0dfe1;
+        }
+
+        .full-width-container img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .big-gap-container {
+            display: flex;
+            width: 100%;
+            gap: 150px;
+        }
+
+        .big-gap-container .block {
+            flex: 1;
+            margin: 0;
+        }
+
+        
+        .pos-container {
+            border: 1px solid black;
+            padding: 0;
+            background: #f0f0f0;
+            min-height: 250px;
+            position: relative;
+        }
+
+        .pos-block {
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .block1-org {
+            background: #4285B4;
+            width: 35%;
+            margin-left: 0;
+            margin-top: 0;
+        }
+
+        .block2-org {
+            background: #A2A2D0;
+            width: 35%;
+            margin-left: 478px;
+            margin-top: 0;
+        }
+
+        .block3-org {
+            background: #002F55;
+            width: 30%;
+            margin-left: 957px;
+            margin-top: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            body::before {
+            
+                display: block;
+                text-align: center;
+                padding: 15px;
+                background: #385f66;
+                color: white;
+                font-weight: bold;
+                position: sticky;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 1000;
+                margin-bottom: 20px;
+            }
+            
+            body {
+                padding-top: 0;
+            }
+            
+            h1 {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="mb-4 text-center">Лабораторная работа 2</h1>
+
+
+    <div class="task-section">
+        <div class="task-title">Задание 1: Три в ряд</div>
+        <div class="d-flex justify-content-between gap-3">
+            <div class="block flex-fill">Блок 1</div>
+            <div class="block flex-fill">Блок 2</div>
+            <div class="block flex-fill">Блок 3</div>
+        </div>
+    </div>
+<div class="task-title">Задание 2</div>
+    <div style="border:1px solid black;padding:20px;background:#c398e8;">
+        <h1><i>Привет мир</i></h1>
+    </div>
+
+
+<div class="task-section">
+        <div class="task-title">Задание 3: Расположение блоков</div>
+        
+        <div class="d-flex mb-3" style="gap: 0;">
+            <div class="block flex-fill" style="margin-right: 0;">первый</div>
+            <div class="block flex-fill" style="margin-left: 0;">второй</div>
+        </div>
+    
+        <div class="d-flex mb-3" style="gap: 0;">
+            <div class="block flex-fill" style="margin-right: 0;">1</div>
+            <div class="block flex-fill" style="margin-right: 0;">2</div>
+            <div class="block flex-fill" style="margin-right: 0;">3</div>
+            <div class="block flex-fill" style="margin-right: 0;">4</div>
+            <div class="block flex-fill" style="margin-right: 0;">5</div>
+            <div class="block flex-fill">6</div>
+        </div>
+        
+        <div class="d-flex" style="gap: 0;">
+            <div class="block" style="width: 25%; margin-right: 0;">первый</div>
+            <div class="block" style="width: 25%; margin-right: 0;">второй</div>
+            <div class="block" style="width: 16.666%; margin-right: 0;">первый</div>
+            <div class="block" style="width: 16.666%; margin-right: 0;">второй</div>
+            <div class="block" style="width: 16.666%;">третий</div>
+        </div>
+    </div>
+
+    
+    <div class="task-section">
+        <div class="task-title">Задание 4: Расположение блоков</div>
+        <div style="border:1px solid black; padding:10px; background:#f0f0f0; min-height: 200px;">
+            <div style="background:#e3969f; color:white; padding:20px 0; width:35%; text-align:center; margin-left:0; margin-top:0;">
+                Блок вверху
+            </div>
+            <div style="background:#eb4646; color:white; padding:20px 0; width:35%; text-align:center; margin-left:385px; margin-top:0;">
+                Блок по центру
+            </div>
+            <div style="background:#dc4c9e; color:white; padding:20px 0; width:30%; text-align:center; margin-left:770px; margin-top:0;">
+                Блок внизу
+            </div>
+        </div>
+    </div>
+
+    <div class="task-section">
+        <div class="task-title">Задание 5</div>
+        <div class="big-gap-container">
+            <div class="block">Блок 1</div>
+            <div class="block">Блок 2</div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
